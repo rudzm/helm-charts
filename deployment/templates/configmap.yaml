@@ -1,0 +1,10 @@
+{{- if .Values.configMap.enabled -}}
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "deployment.fullname" . }}-cm
+  labels:
+    {{- include "deployment.labels" . | nindent 4 }}
+data:
+    {{- toYaml .Values.configMap.data | nindent 2 }}
+{{- end -}}

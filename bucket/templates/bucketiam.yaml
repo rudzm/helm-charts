@@ -1,0 +1,23 @@
+{{- if .Values.iam.enabled }}
+apiVersion: storage.gcp.upbound.io/v1beta1
+kind: BucketIAMMember
+metadata:
+  {{- with .Values.annotations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  labels:
+    atombank.co/bucketiam-name: {{ .Values.name }}
+  {{- with .Values.labels }}
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  name: {{ .Values.name }}
+spec:
+  forProvider:
+    bucketSelector:
+      matchLabels:
+        atombank.co/bucket-name: {{ .Values.name }}
+    member: "serviceAccount:{{ .Values.iam.member }}@{{ .Values.global.projectId }}.iam.gserviceaccount.com"
+    role: {{ .Values.iam.role }}
+  deletionPolicy: Delete
+{{- end }}

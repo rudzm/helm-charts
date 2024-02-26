@@ -1,0 +1,13 @@
+global:
+  projectId: gcp-project-id
+
+name: ab-gitops-example-bucket-123qwe
+location: europe-west2
+storageClass: Standard
+deletionPolicy: Delete
+annotations: {}
+labels: {}
+iam:
+  enabled: true
+  member: test-name
+  role: roles/storage.admin

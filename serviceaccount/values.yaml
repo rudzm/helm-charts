@@ -1,0 +1,8 @@
+
+global:
+  projectId: gcp-project-id
+
+
+name: test-sa
+annotations: {}
+labels: {}
