@@ -3,9 +3,9 @@ entries:
   bucket:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-26T11:24:00.338128+01:00"
+    created: "2024-02-28T13:50:41.796415+01:00"
     description: A Helm chart for Kubernetes
-    digest: 3dcf3b3bc7b3beef024697ad56b1829b4081f719ebb8d5e5e385ac618bd0a657
+    digest: b919c94155d5b14d5d8963afd715d921e6757785dc5a1654f5cf2230a2842cdb
     name: bucket
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   deployment:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-26T11:24:00.338779+01:00"
+    created: "2024-02-28T13:50:41.80087+01:00"
     description: A Helm chart for Kubernetes
     digest: 92f1cf06479910091444e79735be8613aa3a434e197f5d6a18e25591cf0e9068
     name: deployment
@@ -25,7 +25,7 @@ entries:
   serviceaccount:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-02-26T11:24:00.33905+01:00"
+    created: "2024-02-28T13:50:41.805075+01:00"
     description: A Helm chart for Kubernetes
     digest: 7a49122a66850a3b98daa582f41a06ea2699c340df13d0381f88affa63b0e8e1
     name: serviceaccount
@@ -33,4 +33,4 @@ entries:
     urls:
     - serviceaccount-0.1.0.tgz
     version: 0.1.0
-generated: "2024-02-26T11:24:00.336815+01:00"
+generated: "2024-02-28T13:50:41.795321+01:00"

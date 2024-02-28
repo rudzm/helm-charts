@@ -16,4 +16,5 @@ spec:
   forProvider:
     location: {{ .Values.location }}
     storageClass: {{ .Values.storageClass }}
+    forceDestroy: true
   deletionPolicy: {{ .Values.deletionPolicy }}
