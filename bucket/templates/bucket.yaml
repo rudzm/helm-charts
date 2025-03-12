@@ -8,7 +8,7 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   labels:
-    atombank.co/bucket-name: {{ .Values.name }}
+    bucket-name: {{ .Values.name }}
   {{- with .Values.labels }}
     {{- toYaml . | nindent 4 }}
   {{- end }}
